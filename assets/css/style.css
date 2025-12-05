@@ -54,3 +54,44 @@ body {
         transform: translate(30px, -20px) scale(1.05);
     }
 }
+
+#name {
+    background: linear-gradient(to right, #6f3ec5, #2196f3, #6f3ec5, #2196f3);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: two-color-gradient 3s linear infinite;
+}
+
+@keyframes two-color-gradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 100% center;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: rgb(108, 117, 125);
+    margin-left: 5px;
+    height: 1em;
+    vertical-align: middle;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
