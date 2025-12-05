@@ -1,0 +1,24 @@
+.dark-section {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --primary: #5ec6f3;
+    --secondary: #818cf8;
+    --slate-800: #1e293b;
+    --slate-850: #1b2639;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.navbar {
+    background-color: #0f172a !important;
+    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.7);
+}
