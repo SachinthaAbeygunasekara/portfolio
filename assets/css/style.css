@@ -126,3 +126,21 @@ body {
         border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
     }
 }
+
+.scroller{
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
