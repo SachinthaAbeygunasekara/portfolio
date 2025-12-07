@@ -1,23 +1,12 @@
 body {
     font-family: 'Outfit', sans-serif;
-}
-
-.dark-section {
     background-color: #0f172a;
     color: #cbd5e1;
-    font-family: 'Outfit', sans-serif;
-    overflow: hidden;
-}
-
-:root {
-    --primary: #5ec6f3;
-    --secondary: #818cf8;
-    --slate-800: #1e293b;
-    --slate-850: #1b2639;
+    overflow-x: hidden;
 }
 
 .gradient-text {
-    background: linear-gradient(to right, var(--primary), var(--secondary));
+    background: linear-gradient(to right, #5ec6f3, #818cf8);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -127,7 +116,7 @@ body {
     }
 }
 
-.scroller{
+.scroller {
     animation: bounce 1s infinite;
 }
 
@@ -143,4 +132,22 @@ body {
     100% {
         transform: translateY(-20px);
     }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0dcaf0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0d6efd;
 }
