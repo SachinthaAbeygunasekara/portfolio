@@ -151,3 +151,74 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: #0d6efd;
 }
+
+.wide-placeholder {
+    background-color: #1e293b;
+    position: relative;
+    transition: 0.3s ease;
+    overflow: visible;
+}
+
+.wide-placeholder:before {
+    box-shadow:
+        0 0 5px #5ec6f3,
+        0 0 5px #5ec6f3,
+        0 0 5px #5ec6f3;
+}
+
+.wide-placeholder::after {
+    box-shadow:
+        0 0 5px #818cf8,
+        0 0 5px #818cf8,
+        0 0 5px #818cf8;
+}
+
+.wide-placeholder::before,
+.wide-placeholder::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 51%;
+    pointer-events: none;
+    z-index: -1;
+    transition: 0.3s ease;
+    border-radius: inherit;
+}
+
+.wide-placeholder::before {
+    left: 0;
+}
+
+.wide-placeholder::after {
+    right: 0;
+}
+
+.wide-placeholder:hover:before {
+    box-shadow:
+        0 0 15px #5ec6f3,
+        0 0 15px #5ec6f3,
+        0 0 15px #5ec6f3;
+}
+
+.wide-placeholder:hover::after {
+    box-shadow:
+        0 0 15px #818cf8,
+        0 0 15px #818cf8,
+        0 0 15px #818cf8;
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 8px 8px;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.user-icon {
+    width: 200px;
+    height: 200px;
+}
