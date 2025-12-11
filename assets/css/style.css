@@ -222,3 +222,70 @@ body {
     width: 200px;
     height: 200px;
 }
+
+.tech-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+    height: 100%;
+    transition: 0.25s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(129, 140, 248, 0.4);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-box i {
+    font-size: 28px;
+    color: white;
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skill-box {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.skill-box:hover {
+    transform: scale(1.12);
+}
+
+.skill-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+}
+
+.skill-label {
+    margin-top: 5px;
+    font-size: 12px;
+    opacity: 0.8;
+    text-align: center;
+}
+
