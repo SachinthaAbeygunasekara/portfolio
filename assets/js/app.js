@@ -32,3 +32,16 @@ function erase() {
 }
 
 window.onload = setTimeout(type, 500);
+
+function filterProjects(category) {
+    const cards = document.querySelectorAll(".project-card");
+    const buttons = document.querySelectorAll(".filter-btn");
+
+    buttons.forEach(btn => btn.classList.remove("active"));
+    event.target.classList.add("active");
+
+    cards.forEach(card => {
+        const type = card.getAttribute("data-category");
+        card.style.display = (category === "all" || type.includes(category)) ? "" : "none";
+    });
+}
