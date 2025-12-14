@@ -347,3 +347,59 @@ body {
     margin-right: 8px;
     vertical-align: middle;
 }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.1);
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Inputs dark style */
+/* Inputs dark style */
+.custom-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.custom-input::placeholder {
+    color: #94a3b8;
+}
+
+.custom-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* Social icons */
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #1e293b;
+    color: #cbd5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #0ea5e9;
+    color: #020617;
+}
