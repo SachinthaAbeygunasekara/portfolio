@@ -329,14 +329,14 @@ body {
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #4875f4 0%, #8b3bec 100%);
     border: none;
     color: white;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
 }
 
 .filter-btn.active:hover {
-    background: linear-gradient(135deg, #7689f0 0%, #8459b0 100%);
+    background: linear-gradient(135deg, #305ae7 0%, #7728d1 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 }
@@ -365,8 +365,6 @@ body {
     justify-content: center;
 }
 
-/* Inputs dark style */
-/* Inputs dark style */
 .custom-input {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -386,7 +384,6 @@ body {
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
 }
 
-/* Social icons */
 .social-btn {
     width: 42px;
     height: 42px;
@@ -402,4 +399,16 @@ body {
 .social-btn:hover {
     background-color: #0ea5e9;
     color: #020617;
+}
+
+.back-to-top-btn {
+    background: linear-gradient(135deg, #4875f4 5%, #8b3bec 100%);
+    border: none;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.back-to-top-btn:hover {
+    background: linear-gradient(135deg, #305ae7 5%, #7728d1 100%);
 }
